@@ -4,7 +4,7 @@
     height: 80px;
     display: flex;
     font-size: 1.2rem;
-    opacity: 80%;
+    opacity: 0.8;
 
 }
 
@@ -63,7 +63,7 @@
     z-index: 1;
     top: 70px;
     right: 0;
-    opacity: 80%;
+    opacity: 0.8;
     list-style: none;
     height: 100%;
     width: 15%;
