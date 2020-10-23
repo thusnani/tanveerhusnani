@@ -13,6 +13,7 @@
     margin-left: 2px;
     height: 5rem;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 
@@ -43,6 +44,7 @@
     text-align: left;
     width: 100%;
     display: table;
+    transition: all 0.5s ease 0s;
 }
 .nav-links:hover {
     background-color: #BFCAD0;
@@ -66,6 +68,7 @@
     opacity: 0.8;
     list-style: none;
     height: 100%;
-    width: 15%;
+    width: 150px;
     padding-left: 0rem;
+    transition: transform 0.5s ease-in-out;
 }
