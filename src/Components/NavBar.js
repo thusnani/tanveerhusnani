@@ -23,19 +23,19 @@ class NavBar extends Component {
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     <li>
-                        <a className="nav-links" href="#Home"> HOME</a>
+                        <a className="nav-links" href="#Home"> Home</a>
                     </li>
                     <li>
-                        <a className="nav-links" href="#AboutMe"> ABOUT ME</a>
+                        <a className="nav-links" href="#AboutMe"> About Me</a>
                     </li>
                     <li>
-                        <a className="nav-links" href="#Skills"> SKILLS</a>
+                        <a className="nav-links" href="#Skills"> Skills</a>
                     </li>
                     <li>
-                        <a className="nav-links" href="#MyWork"> MY WORK</a>
+                        <a className="nav-links" href="#MyWork"> My Work</a>
                     </li>
                     <li>
-                        <a className="nav-links" href="#Home"> CONTACT</a>
+                        <a className="nav-links" href="#Home"> Contact</a>
                     </li>
                 </ul>
             </nav>
