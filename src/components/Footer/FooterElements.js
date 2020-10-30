@@ -102,6 +102,7 @@ export const ImageLogo = styled.img`
     width: 30%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    align-items: right;
 `
 
 export const WebsiteRights = styled.small`
