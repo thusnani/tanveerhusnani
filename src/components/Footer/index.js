@@ -28,7 +28,7 @@ const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
-                <FooterLinksContainer>
+                {/* <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
@@ -50,13 +50,12 @@ const Footer = () => {
                                 aria-label="Facebook">Facebook</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
-                </FooterLinksContainer>
+                </FooterLinksContainer> */}
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
                             <ImageLogo src={logo} alt="logo" />
                         </SocialLogo>
-                        <WebsiteRights>TanveerHusnani.ca © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink
                                 href="https://www.linkedin.com/in/tanveerhusnani/"
@@ -64,8 +63,6 @@ const Footer = () => {
                                 aria-label="LinkedIn"
                             >
                                 <FaLinkedin />
-                                
-
                             </SocialIconLink>
                             <SocialIconLink
                                 href="https://github.com/thusnani/tanveerhusnani"
@@ -89,6 +86,8 @@ const Footer = () => {
                                 <FaFacebook />
                             </SocialIconLink>
                         </SocialIcons>
+                        <WebsiteRights>TanveerHusnani.ca © {new Date().getFullYear()} All rights reserved.
+                        </WebsiteRights>
                     </SocialMediaWrap>
                 </SocialMedia>
             </FooterWrap>

@@ -8,7 +8,6 @@ import Home from './pages';
 
 class App extends Component {
 
-
   render() {
     return (
       <div className="App">
@@ -17,9 +16,6 @@ class App extends Component {
         </Router>
       </div>
     );
-
-
-
   }
 }
 
