@@ -1,0 +1,69 @@
+.navbar-container {
+    padding: 5px;
+    background-color: #000000;
+    height: 80px;
+    display: flex;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.navbar-app-logo {
+    justify-self: start;
+    margin-left: 2px;
+    height: 5rem;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.fa-times {
+    color: #fff;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    display: table;
+    transition: all 0.5s ease 0s;
+}
+
+.nav-links:hover {
+    color: #9c1313;
+    box-shadow: 0 0 5px #9c1313, 0 0 25px #9c1313, 0 0 50px #9c1313, 0 0 2500px #9c1313;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    background: #000000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: auto;
+    top: 70px;
+    right: 0;
+    opacity: 0.8;
+    list-style: none;
+    height: 100vh;
+    width: 200px;
+    padding-left: 0rem;
+    transition: transform 0.5s ease-in-out;
+}
