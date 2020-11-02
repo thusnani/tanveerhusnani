@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import logo from '../../images/tanveer_husnani_logo.png';
 import { animateScroll as scroll } from 'react-scroll'
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
@@ -14,7 +14,6 @@ import {
     SocialIconLink
 } from './FooterElements'
 
-import { TweenMax, Power3 } from 'gsap';
 
 const Footer = () => {
 
