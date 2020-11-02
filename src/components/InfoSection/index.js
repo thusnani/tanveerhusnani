@@ -16,7 +16,7 @@ import {
     ArrowForward, 
     ArrowRight
 } from './InfoElements'
-import { TweenLite, Power3 } from 'gsap';
+import { TweenMax, Power3 } from 'gsap';
 
 
 const InfoSection = ({
@@ -44,8 +44,8 @@ const InfoSection = ({
     useEffect(() => {
         console.log(textItem);
         console.log(imgItem);
-        TweenLite.from(textItem, 1.5, { opacity: 0, x: 1000, ease: Power3.easeIn, delay: 0.8 })
-        TweenLite.from(imgItem, 1.5, { opacity: 0, x: 1000, ease: Power3.easeIn })
+        TweenMax.from(textItem, 1.5, { opacity: 0, x: 1000, ease: Power3.easeIn, delay: 0.8 })
+        TweenMax.from(imgItem, 1.5, { opacity: 0, x: 1000, ease: Power3.easeIn })
     }, [])
 
     const [hover, setHover] = useState(false)
