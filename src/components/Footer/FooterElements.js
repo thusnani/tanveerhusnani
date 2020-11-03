@@ -41,7 +41,8 @@ export const SocialLogo = styled(Link)`
     display: flex;
     font-weight: bold;
     justify-content: center;
-    inline-size: 80px;
+    max-height: 80px;
+    max-width: 80px;
 `
 
 const spinAnimation = keyframes`

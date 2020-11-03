@@ -25,7 +25,7 @@ export const homeObjTwo = {
     topLine: 'My Skills',
     headline: 'R in MERN Stack, Stands for React',
     description: 'I have started using the React Framework in order to build my first web application.',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'See My Work',
     buttonLink: 'mywork',
     buttonDisplay: true,
     imgStart: false,
