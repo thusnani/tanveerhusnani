@@ -13,7 +13,7 @@ import {
     BtnWrap,
     ImgWrap,
     Img,
-    ArrowForward, 
+    ArrowForward,
     ArrowRight
 } from './InfoElements'
 import { TweenMax, Power3 } from 'gsap';
@@ -42,10 +42,12 @@ const InfoSection = ({
     let imgItem = useRef(null);
 
     useEffect(() => {
-        console.log(textItem);
-        console.log(imgItem);
-        TweenMax.from(textItem, 1.5, { opacity: 0, x: 1000, ease: Power3.easeIn, delay: 0.8 })
-        TweenMax.from(imgItem, 1.5, { opacity: 0, x: 1000, ease: Power3.easeIn })
+        TweenMax.staggerFrom([textItem, imgItem], 1.5, {
+            opacity: 0,
+            x: 400,
+            ease: Power3.easeOut,
+        }, 0)
+
     }, [])
 
     const [hover, setHover] = useState(false)
@@ -60,7 +62,7 @@ const InfoSection = ({
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
-                            <TextWrapper ref={el => {textItem = el}}>
+                            <TextWrapper ref={el => { textItem = el }}>
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
@@ -81,7 +83,7 @@ const InfoSection = ({
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            <ImgWrap ref={el => {imgItem = el}}>
+                            <ImgWrap ref={el => { imgItem = el }}>
                                 <Img src={img} alt={alt} />
                             </ImgWrap>
                         </Column2>

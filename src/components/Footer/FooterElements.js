@@ -40,8 +40,8 @@ export const SocialLogo = styled(Link)`
     text-decoration: none;
     display: flex;
     font-weight: bold;
-    max-width: 60px;
     justify-content: center;
+    inline-size: 80px;
 `
 export const ImageLogo = styled.img`
     width: 100%;
