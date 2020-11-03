@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
@@ -43,11 +43,21 @@ export const SocialLogo = styled(Link)`
     justify-content: center;
     inline-size: 80px;
 `
+
+const spinAnimation = keyframes`
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(90deg); }
+    100% { transform: rotateY(0deg); }
+`
+
 export const ImageLogo = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
     align-items: right;
+/*     animation-name: ${spinAnimation};
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
 `
 
 export const SocialIcons = styled.div`
