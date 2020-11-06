@@ -11,7 +11,7 @@ export const homeObjOne = {
     buttonDisplay: true,
     imgStart: true,
     img: require('../../images/svg-1.svg'),
-    alt: 'Car',
+    alt: 'developer',
     dark: true,
     primary: true,
     darkText: false
@@ -30,7 +30,7 @@ export const homeObjTwo = {
     buttonDisplay: true,
     imgStart: false,
     img: require('../../images/svg-2.svg'),
-    alt: 'Car',
+    alt: 'react-developer',
     dark: false,
     primary: false,
     darkText: true
@@ -49,7 +49,7 @@ export const homeObjThree = {
     buttonDisplay: true,
     imgStart: true,
     img: require('../../images/svg-3.svg'),
-    alt: 'Car',
+    alt: 'website-window',
     dark: true,
     primary: true,
     darkText: false
@@ -68,7 +68,7 @@ export const homeObjFour = {
     buttonDisplay: false,
     imgStart: false,
     img: require('../../images/svg-4.svg'),
-    alt: 'Car',
+    alt: 'text-email-call',
     dark: false,
     primary: false,
     darkText: true

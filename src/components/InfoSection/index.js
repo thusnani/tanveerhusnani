@@ -15,8 +15,13 @@ import {
     Img,
     ArrowForward,
     ArrowRight
-} from './InfoElements'
-import { TweenMax, Power3 } from 'gsap';
+} from './InfoElements';
+
+import { TweenMax, Power3 } from 'gsap'; 
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 
 const InfoSection = ({
@@ -40,12 +45,31 @@ const InfoSection = ({
 
     let textItem = useRef(null);
     let imgItem = useRef(null);
+    let wrapperItem = useRef(null); 
 
     useEffect(() => {
-        TweenMax.staggerFrom([textItem, imgItem], 1.5, {
+
+        // register ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+        
+        TweenMax.from(textItem, 3, {
+            scrollTrigger: {
+                trigger: wrapperItem,
+                toggleActions: 'restart none none none"'
+            },
             opacity: 0,
             x: 400,
-            ease: Power3.easeOut,
+            ease: Power3.easeOut
+        }, 0)
+
+        TweenMax.from(imgItem, 3, {
+            scrollTrigger: {
+                trigger: wrapperItem,
+                toggleActions: 'restart none none none"'
+            },
+            opacity: 0,
+            x: 400,
+            ease: Power3.easeOut
         }, 0)
 
     }, [])
@@ -59,7 +83,7 @@ const InfoSection = ({
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
-                <InfoWrapper>
+                <InfoWrapper ref={el => { wrapperItem = el }}>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper ref={el => { textItem = el }}>
