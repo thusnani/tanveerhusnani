@@ -55,7 +55,7 @@ const InfoSection = ({
         TweenMax.from(textItem, 3, {
             scrollTrigger: {
                 trigger: wrapperItem,
-                toggleActions: 'restart none none none"'
+                toggleActions: 'restart none none none'
             },
             opacity: 0,
             x: 400,
@@ -65,7 +65,7 @@ const InfoSection = ({
         TweenMax.from(imgItem, 3, {
             scrollTrigger: {
                 trigger: wrapperItem,
-                toggleActions: 'restart none none none"'
+                toggleActions: 'restart none none none'
             },
             opacity: 0,
             x: 400,

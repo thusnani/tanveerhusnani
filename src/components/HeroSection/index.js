@@ -13,7 +13,7 @@ const HeroSection = () => {
     return (
         <HeroContainer id='home'>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                <VideoBg autoPlay loop muted src="https://tansvideobucket.s3.ca-central-1.amazonaws.com/video.mp4" type='video/mp4' />
             </HeroBg>
             <HeroContent>
                 <HeroH1>Tanveer Husnani</HeroH1>
