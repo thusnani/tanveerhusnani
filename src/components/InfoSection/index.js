@@ -57,7 +57,6 @@ const InfoSection = ({
                 trigger: wrapperItem,
                 start: 'top 75%',
                 end: 'bottom 25%',
-                markers: true,
                 toggleActions: 'play none none none'
             },
             opacity: 0,
@@ -70,7 +69,6 @@ const InfoSection = ({
                 trigger: wrapperItem,
                 start: 'top 75%',
                 end: 'bottom 25%',
-                markers: true,
                 toggleActions: 'play none none none'
             },
             opacity: 0,

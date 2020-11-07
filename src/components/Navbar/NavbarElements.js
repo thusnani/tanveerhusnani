@@ -35,6 +35,7 @@ export const NavLogo = styled(LinkS)`
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
+    max-width: 60px;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -42,8 +43,7 @@ export const NavLogo = styled(LinkS)`
 `
 
 export const ImageLogo = styled.img`
-    width: 30%;
-    margin: 0 0 10px 0;
+    width: 100%;
     padding-right: 0;
 `
 
