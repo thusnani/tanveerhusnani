@@ -60,7 +60,7 @@ const InfoSection = ({
                 toggleActions: 'play none none none'
             },
             opacity: 0,
-            x: 400,
+            x: 200,
             ease: Power3.easeOut
         }, 0)
 
@@ -72,7 +72,7 @@ const InfoSection = ({
                 toggleActions: 'play none none none'
             },
             opacity: 0,
-            x: 400,
+            x: 200,
             ease: Power3.easeOut
         }, 0)
     }, [])
