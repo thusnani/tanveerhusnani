@@ -17,7 +17,7 @@ import {
     ArrowRight
 } from './InfoElements';
 
-import { TweenMax, Power3 } from 'gsap'; 
+import { TweenMax, Power3 } from 'gsap';
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -45,18 +45,19 @@ const InfoSection = ({
 
     let textItem = useRef(null);
     let imgItem = useRef(null);
-    let wrapperItem = useRef(null); 
+    let wrapperItem = useRef(null);
 
     useEffect(() => {
 
         // register ScrollTrigger
         gsap.registerPlugin(ScrollTrigger);
-        
+
         TweenMax.from(textItem, 3, {
             scrollTrigger: {
                 trigger: wrapperItem,
-                start: 'top 30%',
-                end: 'bottom 70%',
+                start: 'top 75%',
+                end: 'bottom 25%',
+                markers: true,
                 toggleActions: 'play none none none'
             },
             opacity: 0,
@@ -67,15 +68,15 @@ const InfoSection = ({
         TweenMax.from(imgItem, 3, {
             scrollTrigger: {
                 trigger: wrapperItem,
-                start: 'top 30%',
-                end: 'bottom 70%',
+                start: 'top 75%',
+                end: 'bottom 25%',
+                markers: true,
                 toggleActions: 'play none none none'
             },
             opacity: 0,
             x: 400,
             ease: Power3.easeOut
         }, 0)
-
     }, [])
 
     const [hover, setHover] = useState(false)
