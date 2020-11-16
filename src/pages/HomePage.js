@@ -6,7 +6,7 @@ import InfoSection from '../components/InfoSection'
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../components/InfoSection/data'
 import Footer from '../components/Footer'
 
-const Home = () => {
+const HomePage = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -27,4 +27,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default HomePage

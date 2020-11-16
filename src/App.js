@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { BrowserRouter as Router} from 'react-router-dom';
-import Home from './pages';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import MyWorkPage from './pages/MyWorkPage';
 
 class App extends Component {
 
@@ -10,7 +11,8 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Home />
+          <HomePage />
+          <MyWorkPage workName='closet-app' />
         </Router>
       </div>
     );
