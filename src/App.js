@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <HomePage />
-          <MyWorkPage workName='closet-app' />
+          {/* <MyWorkPage workName='closet-app' /> */}
         </Router>
       </div>
     );
