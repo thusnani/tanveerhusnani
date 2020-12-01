@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react';
 import logo from '../../images/tanveer_husnani_logo.png';
-import { animateScroll as scroll } from 'react-scroll'
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import {
     FooterContainer,
     FooterWrap,
@@ -12,12 +12,31 @@ import {
     WebsiteRights,
     SocialIcons,
     SocialIconLink
-} from './FooterElements'
+} from './FooterElements';
 
+import { TweenMax, Power3 } from 'gsap';
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Footer = () => {
 
+    let wrapperItem = useRef(null);
 
+    useEffect(() => {
+        // register ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        TweenMax.from(wrapperItem, 3, {
+            scrollTrigger: {
+                trigger: wrapperItem,
+                toggleActions: 'play none none none'
+            },
+            opacity: 0,
+            y: 50,
+            ease: Power3.easeOut
+        }, 0)
+    }, [])
 
     const toggleHome = () => {
         scroll.scrollToTop()
@@ -27,7 +46,7 @@ const Footer = () => {
         <FooterContainer>
             <FooterWrap>
                 <SocialMedia>
-                    <SocialMediaWrap>
+                    <SocialMediaWrap ref={el => { wrapperItem = el }}>
                         <SocialLogo to='/' onClick={toggleHome}>
                             <ImageLogo src={logo} alt="logo" />
                         </SocialLogo>
